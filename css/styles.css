@@ -6,4 +6,32 @@ header,
 section {
     padding: 1rem;
 }
-/* developer styles go here */
+
+h2 {
+    background-color: tomato;
+    padding: 1rem;
+    color: white;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    /* this work, because p and h3 elements are direct siblings. Sticky position can be thought of as a hybrid of related, fixed, and absolute poition */
+}
+h3 {
+    background-color: rgb(244, 250, 250);     
+    position: sticky;    
+    position: -webkit-sticky;
+    top: 70px;
+}
+
+.snowflake {    
+    position: fixed;
+    /* fixed position elements are similar to absolute, the natural spaces that the element took up in the flow is gone */
+    right: 5%;
+    bottom: 5%;    
+    z-index: 1;    
+}
+
+p {
+    margin-bottom: 1.5rem;
+    max-width: 60ch;
+}
